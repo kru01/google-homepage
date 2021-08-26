@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+html body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+body nav {
+    align-self: flex-end;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav #images {
+    padding: 15px 15px;
+}
+
+nav #apps {
+    padding: 5px 5px;
+}
+
+#apps:hover i {background-color: rgb(140 142 146 / 30%);}
+
+#apps i {
+    padding: 7px 7px;
+    border-radius: 50%;
+}
+
+nav #profile {
+    padding: 4px 4px;
+}
+
+#profile img {
+    border-radius: 50%;
+    padding: 4px 4px;
+}
+
+#profile:hover img {background-color: rgb(140 142 146 / 30%);}
+
+body main {
+    align-self: center;
+}
+
+body footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footer {
+    padding: 0px 20px;
+    display: grid;
+    grid-template: auto / repeat(4, auto) 1fr repeat(3, auto);
+    grid-template-areas: 
+        "about adv business how . privacy terms settings";
+}
+
+#footer #about {
+    grid-area: about;
+    padding: 15px;
+}
+
+#footer #adv {
+    grid-area: adv;
+    padding: 15px;
+}
+
+#footer #business {
+    grid-area: business;
+    padding: 15px;
+}
+
+#footer #how {
+    grid-area: how;
+    padding: 15px;
+}
+
+#footer #privacy {
+    grid-area: privacy;
+    padding: 15px;
+}
+
+#footer #terms {
+    grid-area: terms;
+    padding: 15px;
+}
+
+#footer #settings {
+    grid-area: settings;
+    padding: 15px;
+}
