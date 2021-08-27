@@ -66,17 +66,38 @@ body main {
 
 main form {padding: 20px;}
 
-form #searchbar {
-    width: 560px;
-    height: 39px;
-    border-radius: 24px;
-    border: 1px solid #dfe1e5;
-    padding-top: 6px;
+form #search-holder {
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-form #searchbar:focus-visible {outline: none;}
+#search-holder #search {
+    font-size: 20px;
+    position: absolute;
+    left: 14px;
+    color: #9aa0a6;
+}
 
-form #searchbar:hover {
+#search-holder #searchbar {
+    width: 483px;
+    height: 30px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    padding: 6px 50px 7px 45px;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+#search-holder #mic {
+    height: 20px;
+    position: absolute;
+    right: 22px;
+}
+
+#search-holder #searchbar:focus-visible {outline: none;}
+
+#search-holder #searchbar:hover {
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
 }
