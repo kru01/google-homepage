@@ -21,6 +21,12 @@ body nav {
     align-items: center;
 }
 
+.words-13px {
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+    font-family: arial, sans-serif;
+}
+
 nav #images {
     padding: 15px 15px;
 }
@@ -34,6 +40,8 @@ nav #apps {
 #apps i {
     padding: 7px 7px;
     border-radius: 50%;
+    opacity: .55;
+    color: #000;
 }
 
 nav #profile {
@@ -56,9 +64,7 @@ body main {
     bottom: 50px;
 }
 
-main form {
-    padding: 20px;
-}
+main form {padding: 20px;}
 
 form #searchbar {
     width: 560px;
@@ -68,9 +74,7 @@ form #searchbar {
     padding-top: 6px;
 }
 
-form #searchbar:focus-visible {
-    outline: none;
-}
+form #searchbar:focus-visible {outline: none;}
 
 form #searchbar:hover {
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
@@ -87,8 +91,9 @@ form #buttons {
     margin: 11px 4px;
     padding: 0 16px;
     text-align: center;
+    background-color: #f8f9fa;
     font-size: 14px;
-    color: #5F6368;
+    color: #3c4043;
     height: 36px;
     border: 1px solid #f2f2f2;
     border-radius: 4px
@@ -96,27 +101,48 @@ form #buttons {
 
 #buttons button:hover {
     border: 1px solid #c6c6c6;
-    color: #222;
+    color: #202124;
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+main #languages {
+    position: relative;
+    bottom: 15px;
 }
 
 #languages a {
     padding: 0 3px;
-    color: #8ab4f8;
+    color: #1a0dab;
     font-size: 13px;
+    font-family: arial, sans-serif;
 }
 
 body footer {
     display: flex;
     flex-direction: column;
+    background: #f2f2f2;
+}
+
+footer #country {
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    padding: 15px 30px;
 }
 
 footer #footer {
     padding: 0px 20px;
+    border-top: 1px solid #e4e4e4;
     display: grid;
     grid-template: auto / repeat(4, auto) 1fr repeat(3, auto);
     grid-template-areas: 
-        "about adv business how . privacy terms settings";
+    "about adv business how . privacy terms settings";
+}
+
+#footer a {
+    color: #5f6368;
+    font-size: 14px;
+    font-family: arial, sans-serif;
 }
 
 #footer #about {
