@@ -14,6 +14,8 @@ a {text-decoration: none;}
 
 a:hover {text-decoration: underline;}
 
+/* NAV */
+
 body nav {
     align-self: flex-end;
     padding: 6px 10px;
@@ -27,13 +29,9 @@ body nav {
     font-family: arial, sans-serif;
 }
 
-nav #images {
-    padding: 15px 15px;
-}
+nav #images {padding: 15px 15px;}
 
-nav #apps {
-    padding: 5px 5px;
-}
+nav #apps {padding: 5px 5px;}
 
 #apps:hover i {background-color: rgb(140 142 146 / 30%);}
 
@@ -44,9 +42,7 @@ nav #apps {
     color: #000;
 }
 
-nav #profile {
-    padding: 4px 4px;
-}
+nav #profile {padding: 4px 4px;}
 
 #profile img {
     border-radius: 50%;
@@ -55,13 +51,16 @@ nav #profile {
 
 #profile:hover img {background-color: rgb(140 142 146 / 30%);}
 
+/* MAIN */
+
 body main {
     align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    bottom: 50px;
+    margin-top: 50px;
+    height: 55vh;
+    min-height: 300px;
 }
 
 main form {padding: 20px;}
@@ -89,17 +88,17 @@ form #search-holder {
     font-family: arial, sans-serif;
 }
 
-#search-holder #mic {
-    height: 20px;
-    position: absolute;
-    right: 22px;
-}
-
 #search-holder #searchbar:focus-visible {outline: none;}
 
 #search-holder #searchbar:hover {
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
+}
+
+#search-holder #mic {
+    height: 20px;
+    position: absolute;
+    right: 22px;
 }
 
 form #buttons {
@@ -138,6 +137,8 @@ main #languages {
     font-family: arial, sans-serif;
 }
 
+/* FOOTER */
+
 body footer {
     display: flex;
     flex-direction: column;
@@ -157,46 +158,44 @@ footer #footer {
     display: grid;
     grid-template: auto / repeat(4, auto) 1fr repeat(3, auto);
     grid-template-areas: 
-    "about adv business how . privacy terms settings";
+        "about adv business how . privacy terms settings";
 }
 
 #footer a {
     color: #5f6368;
     font-size: 14px;
     font-family: arial, sans-serif;
-}
-
-#footer #about {
-    grid-area: about;
     padding: 15px;
 }
 
-#footer #adv {
-    grid-area: adv;
-    padding: 15px;
-}
+#footer #about {grid-area: about;}
 
-#footer #business {
-    grid-area: business;
-    padding: 15px;
-}
+#footer #adv {grid-area: adv;}
 
-#footer #how {
-    grid-area: how;
-    padding: 15px;
-}
+#footer #business {grid-area: business;}
 
-#footer #privacy {
-    grid-area: privacy;
-    padding: 15px;
-}
+#footer #how {grid-area: how;}
 
-#footer #terms {
-    grid-area: terms;
-    padding: 15px;
-}
+#footer #privacy {grid-area: privacy;}
 
-#footer #settings {
-    grid-area: settings;
-    padding: 15px;
+#footer #terms {grid-area: terms;}
+
+#footer #settings {grid-area: settings;}
+
+
+@media (max-width: 700px) {
+    #search-holder #searchbar {
+        width: 80%;
+    }
+
+    footer #footer {
+        grid-template: auto auto / repeat(4, auto);
+        grid-template-areas:
+            "about adv business how"
+            "privacy terms settings .";
+    }
+
+    #footer a {
+        padding: 10px;
+    }
 }
