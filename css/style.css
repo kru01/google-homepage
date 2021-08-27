@@ -49,6 +49,61 @@ nav #profile {
 
 body main {
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+main form {
+    padding: 20px;
+}
+
+form #searchbar {
+    width: 560px;
+    height: 39px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    padding-top: 6px;
+}
+
+form #searchbar:focus-visible {
+    outline: none;
+}
+
+form #searchbar:hover {
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+form #buttons {
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.forbuttons {
+    margin: 11px 4px;
+    padding: 0 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #5F6368;
+    height: 36px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px
+}
+
+#buttons button:hover {
+    border: 1px solid #c6c6c6;
+    color: #222;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+#languages a {
+    padding: 0 3px;
+    color: #8ab4f8;
+    font-size: 13px;
 }
 
 body footer {

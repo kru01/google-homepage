@@ -6,7 +6,7 @@
   <title>Google Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
@@ -22,20 +22,21 @@
 
     <main>
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <div id="searchbar">
-            <input type="text">
-        </div>
 
-        <div id="buttons">
-            <button type="submit">Google Search</button>
-            <button type="button">I'm Feeling Lucky</button>
-        </div>
+        <form>
+            <input id="searchbar" type="text">
+    
+            <div id="buttons">
+                <button class="forbuttons" type="submit">Google Search</button>
+                <button class="forbuttons" type="button">I'm Feeling Lucky</button>
+            </div>
+        </form>
 
-        <div id="languages">
+        <p id="languages">
             Google offered in: <a href="#">Lang1</a>
                             <a href="#">Lang2</a>
                             <a href="#">Lang3</a>
-        </div>
+        </p>
     </main>
 
     <footer>
